@@ -1,4 +1,3 @@
-<!-- privacy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,181 +5,301 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flowtica Privacy Policy</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --border: #e5e2dc;
+      --text: #1a1917;
+      --muted: #6b6860;
+      --accent: #2c5f2e;
+      --accent-light: #eaf2ea;
+      --link: #2c5f2e;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-      background: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+      padding: 48px 20px 80px;
     }
 
-    h1, h2 {
-      color: #111;
+    .doc-wrap {
+      max-width: 720px;
+      margin: 0 auto;
     }
 
-    h1 {
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    .app-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
       margin-bottom: 8px;
     }
 
-    .date {
-      color: #666;
-      margin-bottom: 32px;
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .intro {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #2a3d2a;
     }
 
     section {
-      margin-bottom: 28px;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
     }
 
     a {
-      color: #2563eb;
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Flowtica Privacy Policy</h1>
-  <p class="date">Effective Date: April 2, 2026</p>
+<div class="doc-wrap">
 
-  <p>
-    Flowtica respects your privacy. This Privacy Policy explains what information
-    Flowtica collects, how it is used, and your rights when using the app.
-  </p>
+  <header>
+    <div class="app-label">Flowtica</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective Date: April 13, 2026</p>
+  </header>
 
-  <p>
-    By using Flowtica, you agree to the practices described in this Privacy Policy.
-  </p>
+  <div class="intro">
+    Flowtica respects your privacy. This Privacy Policy explains what information Flowtica collects, how it is used, and your rights when using the app. By using Flowtica, you agree to the practices described in this policy.
+  </div>
 
+  <!-- 1. Information We Collect -->
   <section>
     <h2>1. Information We Collect</h2>
 
-    <p>
-      Flowtica is designed to work without requiring an account or sign-in.
-    </p>
-
-    <p>
-      We do not collect your name, email address, phone number, contacts,
-      photos, location, payment information, messages, or personal files.
-    </p>
+    <p>Flowtica is designed to work without requiring an account or sign-in. We do not collect your name, email address, phone number, contacts, photos, location, payment information, messages, or personal files.</p>
 
     <h3>App Usage Analytics</h3>
-    <p>
-      Flowtica uses Firebase Analytics to understand how the app is used and improve
-      stability and features. Firebase Analytics may collect device type, operating
-      system version, app version, country or general region, screens viewed,
-      session duration, crashes or performance issues, and anonymous usage events.
-      This information is aggregated and does not directly identify you.
-    </p>
+    <p>Flowtica uses Firebase Analytics to understand how the app is used and improve stability and features. Firebase Analytics may collect:</p>
+    <ul>
+      <li>Device type, model, and operating system version</li>
+      <li>App version and language</li>
+      <li>Country or general region</li>
+      <li>Screens viewed, session duration, and anonymous usage events</li>
+      <li>Crash reports and performance data</li>
+    </ul>
+    <p>This information is aggregated and does not directly identify you.</p>
+
+    <h3>Advertising (Google AdMob)</h3>
+    <div class="highlight-box">
+      <span class="tag">Important</span>
+      <p style="margin-bottom:0;">Flowtica displays advertisements served by Google AdMob. To serve relevant ads, AdMob and its partners may collect and use certain data including:</p>
+    </div>
+    <ul>
+      <li><strong>Advertising identifiers</strong> — Android Advertising ID (GAID) or Apple IDFA, which may be used for personalized advertising</li>
+      <li><strong>Device information</strong> — device type, operating system, and hardware specs</li>
+      <li><strong>IP address</strong> — used to approximate your general location for ad relevance and fraud prevention</li>
+      <li><strong>Interaction data</strong> — whether you viewed or clicked on an ad</li>
+      <li><strong>Coarse location</strong> — derived from IP address, not GPS</li>
+    </ul>
+    <p>Google uses this data to serve ads, measure ad performance, and detect invalid traffic. You can learn more about how Google uses this data at <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>.</p>
+    <p>You can opt out of personalized ads at any time through your device settings:</p>
+    <ul>
+      <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+      <li><strong>iOS:</strong> Settings → Privacy & Security → Tracking → disable "Allow Apps to Request to Track"</li>
+    </ul>
+
+    <h3>Push Notifications</h3>
+    <p>If you grant permission, Flowtica may send you push notifications to remind you about focus sessions, streaks, or app updates. To send notifications, your device generates a push token (a unique identifier issued by Apple or Google) which is used solely to deliver notifications to your device. We do not use notification tokens for advertising or share them with third parties.</p>
 
     <h3>Local App Data</h3>
-    <p>
-      Flowtica stores your focus sessions, streaks, categories, plant progress,
-      themes, and settings locally on your device. This data never leaves your
-      device unless you manually back up or transfer your phone.
-    </p>
+    <p>Flowtica stores your focus sessions, streaks, categories, plant progress, themes, and settings locally on your device. This data never leaves your device unless you manually back up or transfer your phone.</p>
   </section>
 
+  <!-- 2. Permissions -->
   <section>
     <h2>2. Permissions Used</h2>
-    <p>
-      Flowtica only requests vibration permission to vibrate the device when a
-      focus session ends or important actions occur.
-    </p>
-
-    <p>
-      Flowtica does not request access to camera, microphone, contacts, location,
-      notifications, storage, or files.
-    </p>
+    <p>Flowtica requests the following permissions:</p>
+    <ul>
+      <li><strong>Vibration</strong> — to vibrate the device when a focus session ends or important actions occur</li>
+      <li><strong>Notifications</strong> — to send you optional focus reminders and streak alerts. You can disable these at any time in your device settings</li>
+      <li><strong>Advertising ID (Android)</strong> — used by AdMob to serve ads. You can opt out of ad personalization through your device settings</li>
+    </ul>
+    <p>Flowtica does not request access to your camera, microphone, contacts, GPS location, storage, or files.</p>
   </section>
 
+  <!-- 3. How We Use Information -->
   <section>
     <h2>3. How We Use Information</h2>
-    <p>
-      We use analytics data only to improve app performance, fix crashes and bugs,
-      understand which features are useful, and improve the overall user experience.
-    </p>
-
-    <p>
-      We do not sell your data, share your personal data with advertisers, or use
-      your information for targeted advertising. Flowtica does not include ads,
-      ad tracking, or third-party advertising SDKs.
-    </p>
+    <p>We use the information collected to:</p>
+    <ul>
+      <li>Improve app performance, fix crashes, and understand which features are useful</li>
+      <li>Serve advertisements through Google AdMob to support free access to the app</li>
+      <li>Deliver push notifications you have opted into</li>
+      <li>Detect and prevent fraudulent ad activity</li>
+    </ul>
+    <p>We do not sell your personal data or use your information for any purpose beyond those described in this policy.</p>
   </section>
 
+  <!-- 4. Third-Party Services -->
   <section>
     <h2>4. Third-Party Services</h2>
-    <p>
-      Flowtica uses Firebase Analytics by Google. Firebase may process anonymous
-      technical data according to Google’s Privacy Policy:
-      <a href="https://policies.google.com/privacy">
-        https://policies.google.com/privacy
-      </a>
-    </p>
+    <p>Flowtica uses the following third-party services that may collect data as described in their own privacy policies:</p>
+    <div class="highlight-box">
+      <p><strong>Firebase Analytics (Google)</strong><br>
+      Used for anonymous app usage analytics.<br>
+      <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+    </div>
+    <div class="highlight-box">
+      <p><strong>Google AdMob (Google)</strong><br>
+      Used to display advertisements. AdMob may collect advertising identifiers, device data, and IP address to serve and measure ads.<br>
+      <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+      <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    </div>
+    <p>These third-party services operate under their own privacy policies, which we encourage you to review.</p>
   </section>
 
+  <!-- 5. Data Retention -->
   <section>
     <h2>5. Data Retention</h2>
-    <p>
-      Analytics data collected by Firebase may be retained according to Google’s
-      standard retention policies.
-    </p>
-
-    <p>
-      All app data stored locally on your device remains there until you delete
-      the app, clear the app’s data, or uninstall the app.
-    </p>
+    <p>Analytics data collected by Firebase and advertising data collected by AdMob may be retained according to Google's standard retention policies.</p>
+    <p>Push notification tokens are retained only as long as needed to deliver notifications. If you disable notifications, we stop sending them immediately.</p>
+    <p>All app data stored locally on your device remains there until you delete the app, clear the app's data, or uninstall the app.</p>
   </section>
 
+  <!-- 6. Children's Privacy -->
   <section>
     <h2>6. Children's Privacy</h2>
-    <p>
-      Flowtica is not directed toward children under the age of 13. We do not
-      knowingly collect personal information from children.
-    </p>
-
-    <p>
-      If you believe a child has provided personal information, please contact us.
-    </p>
+    <p>Flowtica is not directed toward children under the age of 13. We do not knowingly collect personal information from children. The ads served by AdMob are configured for a general (non-child-directed) audience.</p>
+    <p>If you believe a child has provided personal information through our app, please contact us and we will take steps to remove it.</p>
   </section>
 
+  <!-- 7. Security -->
   <section>
     <h2>7. Security</h2>
-    <p>
-      We take reasonable steps to protect your information. Because most Flowtica
-      data is stored only on your device, you remain in control of your information.
-    </p>
+    <p>We take reasonable steps to protect your information. Because most Flowtica data is stored only on your device, you remain in control of your information. Data transmitted to third-party services like Firebase and AdMob is protected in transit using standard encryption (HTTPS/TLS).</p>
   </section>
 
+  <!-- 8. Your Rights -->
   <section>
-    <h2>8. Your Rights</h2>
-    <p>
-      Depending on your country or region, you may have rights including:
-    </p>
-
+    <h2>8. Your Rights and Choices</h2>
+    <p>Depending on your country or region, you may have rights including:</p>
     <ul>
-      <li>The right to know what information is collected</li>
+      <li>The right to know what information is collected about you</li>
       <li>The right to request deletion of information</li>
-      <li>The right to opt out of analytics collection through your device settings</li>
+      <li>The right to opt out of personalized advertising through your device settings</li>
+      <li>The right to disable push notifications through your device settings</li>
+      <li>The right to opt out of analytics collection through your device settings or Firebase's opt-out mechanisms</li>
     </ul>
+    <p>For California residents (CCPA): You have the right to know, delete, and opt out of the sale of personal information. Flowtica does not sell your personal data.</p>
+    <p>For EU/EEA residents (GDPR): Where required, Google AdMob may present a consent dialog before collecting data for personalized ads.</p>
   </section>
 
+  <!-- 9. Changes -->
   <section>
     <h2>9. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. When we make changes,
-      we will update the Effective Date at the top of this page.
-    </p>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the Effective Date at the top of this page. We encourage you to review this policy periodically.</p>
   </section>
 
+  <!-- 10. Contact -->
   <section>
     <h2>10. Contact Us</h2>
-    <p>
-      If you have questions about this Privacy Policy, contact Flowtica Support at:
-    </p>
-
-    <p>
-      <a href="#">flowticalabs@gmail.com</a>
-    </p>
+    <p>If you have questions about this Privacy Policy or wish to exercise your rights, contact Flowtica Support at:</p>
+    <p><a href="mailto:flowticalabs@gmail.com">flowticalabs@gmail.com</a></p>
   </section>
+
+  <footer>
+    &copy; 2026 Flowtica. All rights reserved.
+  </footer>
+
+</div>
 </body>
 </html>

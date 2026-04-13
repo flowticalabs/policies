@@ -1,172 +1,262 @@
-<!-- terms.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flowtica Terms & Conditions</title>
+  <title>Flowtica Terms &amp; Conditions</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --border: #e5e2dc;
+      --text: #1a1917;
+      --muted: #6b6860;
+      --accent: #2c5f2e;
+      --accent-light: #eaf2ea;
+      --link: #2c5f2e;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-      background: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+      padding: 48px 20px 80px;
     }
 
-    h1, h2 {
-      color: #111;
+    .doc-wrap {
+      max-width: 720px;
+      margin: 0 auto;
     }
 
-    h1 {
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    .app-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
       margin-bottom: 8px;
     }
 
-    .date {
-      color: #666;
-      margin-bottom: 32px;
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .intro {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #2a3d2a;
     }
 
     section {
-      margin-bottom: 28px;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Flowtica Terms & Conditions</h1>
-  <p class="date">Effective Date: April 2, 2026</p>
+<div class="doc-wrap">
 
-  <p>
-    These Terms & Conditions govern your use of the Flowtica mobile application.
-    By downloading or using Flowtica, you agree to these Terms.
-  </p>
+  <header>
+    <div class="app-label">Flowtica</div>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="meta">Effective Date: April 13, 2026</p>
+  </header>
 
+  <div class="intro">
+    These Terms &amp; Conditions govern your use of the Flowtica mobile application. By downloading or using Flowtica, you agree to these Terms. Please read them carefully.
+  </div>
+
+  <!-- 1. Use of the App -->
   <section>
     <h2>1. Use of the App</h2>
-    <p>
-      Flowtica is provided for personal, non-commercial use to help users focus,
-      study, and build productive habits.
-    </p>
-
+    <p>Flowtica is provided for personal, non-commercial use to help users focus, study, and build productive habits.</p>
     <p>You agree not to:</p>
-
     <ul>
       <li>Use the app in any unlawful way</li>
       <li>Attempt to reverse engineer, modify, or disrupt the app</li>
       <li>Use the app to harm, harass, or interfere with others</li>
+      <li>Attempt to interfere with or circumvent any advertising systems or measurement mechanisms in the app</li>
+      <li>Use automated means to interact with ads or generate fraudulent ad impressions or clicks</li>
     </ul>
   </section>
 
+  <!-- 2. No Account Required -->
   <section>
     <h2>2. No Account Required</h2>
-    <p>
-      Flowtica does not require you to create an account. Because there is no
-      account system, we may not be able to recover your data if you uninstall
-      the app, switch devices, or clear app storage.
-    </p>
-
-    <p>
-      You are responsible for backing up your device if you want to keep your data.
-    </p>
+    <p>Flowtica does not require you to create an account. Because there is no account system, we may not be able to recover your data if you uninstall the app, switch devices, or clear app storage.</p>
+    <p>You are responsible for backing up your device if you want to preserve your data.</p>
   </section>
 
+  <!-- 3. App Features -->
   <section>
     <h2>3. App Features</h2>
-    <p>
-      Flowtica includes features such as focus timer sessions, streak tracking,
-      analytics and progress charts, categories and themes, and plant growth
-      progression.
-    </p>
-
-    <p>
-      These features may change, improve, or be removed in future updates.
-    </p>
+    <p>Flowtica includes features such as focus timer sessions, streak tracking, analytics and progress charts, categories and themes, plant growth progression, and push notification reminders.</p>
+    <p>These features may change, improve, or be removed in future updates. We reserve the right to modify or discontinue any feature at any time.</p>
   </section>
 
+  <!-- 4. Advertisements -->
   <section>
-    <h2>4. Analytics</h2>
-    <p>
-      Flowtica uses Firebase Analytics to improve the app. By using Flowtica,
-      you agree that anonymous usage information may be collected as described
-      in the Privacy Policy.
-    </p>
-  </section>
-
-  <section>
-    <h2>5. Intellectual Property</h2>
-    <p>
-      All content, branding, design, logos, graphics, and code related to
-      Flowtica are owned by the developer unless otherwise stated.
-    </p>
-
-    <p>
-      You may not copy, reproduce, or redistribute any part of the app without
-      permission.
-    </p>
-  </section>
-
-  <section>
-    <h2>6. Disclaimer</h2>
-    <p>
-      Flowtica is provided "as is" without warranties of any kind.
-    </p>
-
-    <p>We do not guarantee that:</p>
-
+    <h2>4. Advertisements</h2>
+    <p>Flowtica displays advertisements served by Google AdMob to support free access to the app. By using Flowtica, you acknowledge and agree that:</p>
     <ul>
-      <li>The app will always be available</li>
-      <li>The app will always be error-free</li>
+      <li>Ads may appear within the app experience</li>
+      <li>Google AdMob may collect advertising identifiers and device data to serve and measure ads, as described in our Privacy Policy</li>
+      <li>You will not attempt to block, bypass, or interfere with ad delivery</li>
+      <li>Ad content is provided by Google and its advertising partners; Flowtica is not responsible for the content of third-party advertisements</li>
+    </ul>
+    <p>If you wish to opt out of personalized advertising, you may do so through your device settings. See our Privacy Policy for instructions.</p>
+  </section>
+
+  <!-- 5. Push Notifications -->
+  <section>
+    <h2>5. Push Notifications</h2>
+    <p>Flowtica may request permission to send you push notifications, including focus session reminders, streak alerts, and app updates. Granting notification permission is optional.</p>
+    <p>You can disable push notifications at any time through your device's notification settings. Disabling notifications will not affect core app functionality.</p>
+  </section>
+
+  <!-- 6. Analytics -->
+  <section>
+    <h2>6. Analytics</h2>
+    <p>Flowtica uses Firebase Analytics to improve the app. By using Flowtica, you agree that anonymous usage information may be collected as described in the Privacy Policy.</p>
+  </section>
+
+  <!-- 7. Intellectual Property -->
+  <section>
+    <h2>7. Intellectual Property</h2>
+    <p>All content, branding, design, logos, graphics, and code related to Flowtica are owned by the developer unless otherwise stated. You may not copy, reproduce, or redistribute any part of the app without written permission.</p>
+  </section>
+
+  <!-- 8. Third-Party Services -->
+  <section>
+    <h2>8. Third-Party Services</h2>
+    <p>Flowtica integrates third-party services including Google AdMob and Firebase. Your use of these services within Flowtica is also subject to their respective terms:</p>
+    <div class="highlight-box">
+      <p><strong>Google AdMob / Firebase</strong><br>
+      <a href="https://policies.google.com/terms">https://policies.google.com/terms</a></p>
+    </div>
+    <p>Flowtica is not responsible for the practices, policies, or content of any third-party services.</p>
+  </section>
+
+  <!-- 9. Disclaimer -->
+  <section>
+    <h2>9. Disclaimer</h2>
+    <p>Flowtica is provided "as is" without warranties of any kind. We do not guarantee that:</p>
+    <ul>
+      <li>The app will always be available or error-free</li>
       <li>Your data will never be lost</li>
       <li>The app will improve productivity or study results</li>
+      <li>Ads will always be displayed or that ad revenue will remain available</li>
     </ul>
-
     <p>You use the app at your own risk.</p>
   </section>
 
+  <!-- 10. Limitation of Liability -->
   <section>
-    <h2>7. Limitation of Liability</h2>
-    <p>
-      To the maximum extent permitted by law, the developer of Flowtica will not
-      be liable for loss of data, loss of productivity, device issues, or indirect
-      or incidental damages arising from use of the app.
-    </p>
+    <h2>10. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, the developer of Flowtica will not be liable for loss of data, loss of productivity, device issues, damages arising from third-party advertisements, or indirect or incidental damages arising from use of the app.</p>
   </section>
 
+  <!-- 11. Termination -->
   <section>
-    <h2>8. Termination</h2>
-    <p>
-      We may suspend or discontinue Flowtica at any time without notice.
-      You may stop using the app at any time by uninstalling it.
-    </p>
+    <h2>11. Termination</h2>
+    <p>We may suspend or discontinue Flowtica at any time without notice. You may stop using the app at any time by uninstalling it.</p>
   </section>
 
+  <!-- 12. Changes -->
   <section>
-    <h2>9. Changes to These Terms</h2>
-    <p>
-      We may update these Terms from time to time. Updated Terms become effective
-      when published in the app or on the app listing.
-    </p>
+    <h2>12. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Updated Terms become effective when published in the app or on the app listing. Continued use of the app after changes constitutes your acceptance of the new Terms.</p>
   </section>
 
+  <!-- 13. Governing Law -->
   <section>
-    <h2>10. Governing Law</h2>
-    <p>
-      These Terms are governed by the laws of India, without regard to conflict
-      of law principles.
-    </p>
+    <h2>13. Governing Law</h2>
+    <p>These Terms are governed by the laws of India, without regard to conflict of law principles.</p>
   </section>
 
+  <!-- 14. Contact -->
   <section>
-    <h2>11. Contact</h2>
-    <p>
-      For questions regarding these Terms, contact Flowtica Support at:
-    </p>
-
-    <p>
-      <a href="#">flowticalabs@gmail.com</a>
-    </p>
+    <h2>14. Contact</h2>
+    <p>For questions regarding these Terms, contact Flowtica Support at:</p>
+    <p><a href="mailto:flowticalabs@gmail.com">flowticalabs@gmail.com</a></p>
   </section>
+
+  <footer>
+    &copy; 2026 Flowtica. All rights reserved.
+  </footer>
+
+</div>
 </body>
 </html>
